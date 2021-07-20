@@ -25,6 +25,7 @@ for (var i = 0;i<5;i++) {
         }else{
             console.log('This is false');
 }
+// object literal
 var person = {
     firstName : 'Cornelius',
     lastName : 'Bor',
@@ -40,6 +41,19 @@ var person = {
     }
 }
 console.log(person.fullName());
+//constructor pattern
+
+function fruit(name,color,shape){
+    this.name = name;
+    this.color = color;
+    this.shape = shape;
+
+    this.describe = function(){
+        return this.name + " is "+ this.color + " and is "+ this.shape + " in shape."
+    }
+}
+var melon = new fruit('melon','green','round')
+console.log(melon.describe());
     </script>
 </body>
 </html>
