@@ -5,9 +5,8 @@ const items = [
     {name: "Monitor",price: 100},
 ]
 
-let totalPrice = 0
+totalPrice = 0
 items.forEach(item =>{
-    totalPrice += item.price
-}
-)
+    totalPrice+= item.price
+})
 console.log(totalPrice)
